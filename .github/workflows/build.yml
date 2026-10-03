@@ -5,10 +5,10 @@ on:
     inputs:
       backend_ref:
         description: 后端版本（标签或分支）
-        default: main
+        default: v3.9.5
       frontend_ref:
         description: 前端分支或标签
-        default: master
+        default: v3.9.5
 
 permissions:
   contents: read
