@@ -3,7 +3,8 @@
 	构建完毕后，然后下载镜像并安装
 **docker yaml：
 
-```services:
+```yaml
+services:
   jeecg-backend:
     image: ghcr.nju.edu.cn/ghcr.io/notycn/jeecg-backend:v3.9.5
     container_name: jeecg-backend
@@ -31,3 +32,4 @@
       - jeecg-backend
     ports:
       - "28432:80"
+```
