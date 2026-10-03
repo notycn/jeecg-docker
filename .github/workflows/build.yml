@@ -49,6 +49,9 @@ jobs:
           context: ./frontend
           platforms: linux/amd64
           push: true
-          build-args: BRANCH=${{ inputs.frontend_ref }}
+          build-args: |
+            BRANCH=${{ inputs.frontend_ref }}
+            DOMAIN_URL=https://jeecg.56982.com:8888/jeecg-boot
           tags: |
+            ghcr.io/${{ steps.o.outputs.owner }}/jeecg-frontend:${{ inputs.frontend_ref }}
             ghcr.io/${{ steps.o.outputs.owner }}/jeecg-frontend:latest
