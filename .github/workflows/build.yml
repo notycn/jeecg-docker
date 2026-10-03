@@ -5,7 +5,7 @@ on:
     inputs:
       backend_ref:
         description: 后端版本（标签或分支）
-        default: v3.9.5
+        default: latest
       frontend_ref:
         description: 前端分支或标签
         default: master
