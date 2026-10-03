@@ -30,4 +30,4 @@
     depends_on:
       - jeecg-backend
     ports:
-      - "28432:80"```
+      - "28432:80"
